@@ -21,23 +21,44 @@ img
 	
 .comic
 	background #f68b1f
-	text-align right  
-
-
+	text-align right   
+	    
 .row	
 	max-width 100%
 
 .top-bar
 	background #41A4E5 
-	background-image:url('../img/top_back_azul.png')  
+	background-image url('../img/top_back_azul.png')  
 	height: 88px 
 	border-bottom: 10px
 #d1
 	width: 100%
 
+
 #grecas
 	
 	background: rgba(49, 168, 49, 0.43)
-	background-image:url('../img/top_frame_grecas.png')  
-	height 15px 	
+	background-image url('../img/top_frame_grecas.png')  
+	height 15px 
 	
+
+.card
+	position relative
+	-webkit-transform-style preserve-3d
+	-webkit-transition: 1s
+	
+.face
+	width 100% 
+	 -webkit-backface-visibility hidden
+	
+.card:hover
+	-webkit-transform rotateY(180deg)
+	
+.front
+	width 100% 
+
+.espalda
+	position absolute
+	top 0px
+	width 100%
+	-webkit-transform rotateY(180deg)		
