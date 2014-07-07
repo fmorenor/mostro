@@ -1,0 +1,623 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"ln",
+				"link	Tag"
+			],
+			[
+				"wi",
+				"width"
+			],
+			[
+				"m",
+				"margin"
+			],
+			[
+				"min",
+				"min-width"
+			],
+			[
+				"width",
+				"max-width"
+			],
+			[
+				"tex",
+				"text-decoration"
+			],
+			[
+				"ba",
+				"background-color"
+			],
+			[
+				"te",
+				"text-align"
+			],
+			[
+				"inl",
+				"inline-block"
+			],
+			[
+				"for",
+				"for	for (…) {…}"
+			],
+			[
+				"fi",
+				"firstLength"
+			],
+			[
+				"paddi",
+				"padding-top"
+			],
+			[
+				"s",
+				"script	Tag"
+			],
+			[
+				"icon",
+				"icon1"
+			],
+			[
+				"in",
+				"inline-block"
+			],
+			[
+				"di",
+				"display"
+			],
+			[
+				"l",
+				"list-style"
+			],
+			[
+				"ma",
+				"margin-right"
+			],
+			[
+				"mar",
+				"margin-right"
+			],
+			[
+				"u",
+				"ul	Tag"
+			],
+			[
+				"padd",
+				"padding-right"
+			],
+			[
+				"f",
+				"fonts"
+			],
+			[
+				"fo",
+				"font-size"
+			],
+			[
+				"si",
+				"font-size"
+			],
+			[
+				"ali",
+				"vertical-align"
+			],
+			[
+				"ar",
+				"article	Tag"
+			],
+			[
+				"margi",
+				"margin-right"
+			],
+			[
+				"bor",
+				"border-top"
+			],
+			[
+				"bod",
+				"border-radius"
+			],
+			[
+				"pad",
+				"padding-top"
+			],
+			[
+				"bo",
+				"border"
+			],
+			[
+				"fot",
+				"font-size"
+			],
+			[
+				"font",
+				"font-size"
+			],
+			[
+				"text",
+				"text-decoration"
+			],
+			[
+				"pa",
+				"padding-top"
+			]
+		]
+	},
+	"buffers":
+	[
+		{
+			"file": "css/estilos.styl",
+			"settings":
+			{
+				"buffer_size": 641,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "css/estilos.css",
+			"settings":
+			{
+				"buffer_size": 501,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"contents": "<!DOCTYPE html>\n<html lang=\"en\">\n<head>\n	<meta charset=\"UTF-8\">\n	<title>La Casa del Mostro</title>\n	<link rel=\"stylesheet\" href=\"css/normalize.css\">\n	<link rel=\"stylesheet\" href=\"css/foundation.css\">\n	<link rel=\"stylesheet\" href=\"css/estilos.css\">\n	<script src=\"js/vendor/modernizr.js\"></script>\n</head>\n<body>\n	    <!-- Barra de Navegacion -->\n	  <nav class=\"top-bar\" data-topbar>\n	    <ul class=\"title-area\">\n	      <li class=\"name\">\n\n	        <img id=\"logo\" src=\"img/logo_ok_mostro.p\">\n	      </li>\n	      <li class=\"toggle-topbar menu-icon\"><a href=\"#\">Menu</a></li>\n	    </ul>\n	\n	  <section class=\"top-bar-section\">\n	    <!-- Right Nav Section -->\n	    <ul class=\"right\">\n	      <li class=\"active\"><a href=\"#\" data-reveal-id=\"videoModal\">Serie Animada</a>\n				<div id=\"videoModal\" class=\"reveal-modal large\" data-reveal>\n				  <h2>La Serie Animada de La Casa del Mostro</h2>\n				  <div class=\"flex-video\" widescreen>\n				    <iframe width=\"400\" height=\"225\" src=\"http://www.youtube.com/embed/nSLpIAxG6Pw?rel=0\"  frameborder=\"0\" allowfullscreen> </iframe>\n				  </div>\n				  <a class=\"close-reveal-modal\">&#215;</a>\n				</div>\n	      </li>\n	      <li class=\"has-dropdown\">\n	        <a href=\"#\">Social</a>\n	        <ul class=\"dropdown\">\n	          <li><a href=\"#\" data-reveal-id=\"myModal\">Contacto</a>\n					<div id=\"myModal\" class=\"reveal-modal\" data-reveal>\n					  <form>\n							  <div class=\"row\">\n							    <div class=\"large-12 columns\">\n							      <label>Correo\n							        <input type=\"text\" placeholder=\"Escribe tu correo\" />\n							      </label>\n							    </div>\n							  </div>\n							  <div class=\"row\">\n							    <div class=\"large-6 columns\">\n							      <label>Nombre\n							        <input type=\"text\" placeholder=\"Nombre\" />\n							      </label>\n							    </div>\n							    <div class=\"large-6 columns\">\n							      <label>Apellido \n							        <input type=\"text\" placeholder=\"Apellido \" />\n							      </label>\n							    </div>							\n							  </div>\n							  <div class=\"row\">\n							    <div class=\"large-12 columns\">\n							      <label>Tema\n							        <select>\n							          <option value=\"Sitio Web\">Sitio Web</option>\n							          <option value=\"Ayuda\">Ayuda</option>\n							          <option value=\"Licenica\">Licenica</option>\n							          <option value=\"Saludo\">Saludo</option>\n							        </select>\n							      </label>\n							    </div>\n							  </div>\n							  <div class=\"row\">\n							    <div class=\"large-12 columns\">\n							      <label>Mensaje\n							        <textarea placeholder=\"Envianos tu mensaje\"></textarea>\n							      </label>\n							    </div>\n							    <a href=\"\" class=\"round button\">Enviar</a>\n							  </div>\n							</form>\n					  <a class=\"close-reveal-modal\">&#215;</a>\n					</div>\n	          </li>\n	        </ul>\n	      </li>\n	    </ul>\n	\n	    <!-- Left Nav Section -->\n	    <ul class=\"left horoscopo\">\n	      <li><a href=\"#\">Hoy en el calendario azteca:</a></li>\n	    </ul>\n	  </section>\n	</nav>\n	<div id=\"grecas\"></div>\n <!-- Termina Barra de Navegacion -->\n  <!-- Contenido -->\n  <div class=\"row\">\n  <div class=\"hide-for-small hide-for-medium large-3 columns\"> <a href=\"img/thumb_quetz.png\"><img src=\"img/thumb_quetz.png\">\n  <a href=\"img/thumb_yao.png\"><img src=\"img/thumb_yao.png\"> </a></div>\n\n  <div class=\"small-12 large-6 columns\" data-equalizer-watch>\n  	    <img id=\"d1\" src=\"img/thumb_main_home.png\" alt=\"Conoce a los dioses\" /> \n\n  	<ul class=\"clearing-thumbs comic\" data-clearing>\n  	  <li><a href=\"img/1021_mostro.png\"><img src=\"img/1021_mostro.png\"></a></li>\n  	</ul>\n  </div>\n\n  <div class=\"small-12 large-3 columns \" data-equalizer-watch><a href=\"img/thumb_mostro.png\"><img src=\"img/thumb_mostro.png\">\n  <a href=\"img/thumb_mic.png\"><img src=\"img/thumb_mic.png\">\n  </div>\n</div>\n<div class=\"row\" data-equalizer>\n  <div class=\"small-12 large-3 columns\" data-equalizer-watch><p><a href=\"img/thumb_quetz.png\"><img src=\"img/thumb_oce.png\"></p></div>\n  <div class=\"small-12 large-3 columns\" data-equalizer-watch><p><a href=\"img/thumb_quetz.png\"><img src=\"img/thumb_xipe.png\"></p></div>\n  <div class=\"small-12 large-3 columns \" data-equalizer-watch><p><a href=\"img/thumb_quetz.png\"><img src=\"img/thumb_xochi.png\"></p></div>\n  <div class=\"small-12 large-3 columns \" data-equalizer-watch><p><a href=\"img/thumb_quetz.png\"><img src=\"img/thumb_prox.png\"></p></div>\n</div>\n<footer>\n	<a> Copyright La casa del Mostro</a>\n</footer>\n<script src=\"js/vendor/jquery.js\"></script>\n    <script src=\"js/foundation.min.js\"></script>\n    <script>\n      $(document).foundation();\n    </script>\n</body>\n</html>",
+			"file": "mostro.html",
+			"file_size": 4590,
+			"file_write_time": 1404616766000000,
+			"settings":
+			{
+				"buffer_size": 4588,
+				"line_ending": "Unix"
+			}
+		}
+	],
+	"build_system": "",
+	"command_palette":
+	{
+		"height": 47.0,
+		"selected_items":
+		[
+			[
+				"stylus",
+				"Set Syntax: Stylus"
+			],
+			[
+				"",
+				"BracketHighlighter: Swap Quotes"
+			],
+			[
+				"fou",
+				"Snippet: ZURB Foundation 5 Clearing"
+			],
+			[
+				"Pfo",
+				"Project: Add Folder"
+			],
+			[
+				"f",
+				"Snippet: ZURB Foundation 5 Orbit Slider"
+			],
+			[
+				"foun",
+				"Snippet: ZURB Foundation 5 Sub Nav"
+			],
+			[
+				"Package Control: install	",
+				"Package Control: Install Package"
+			],
+			[
+				"Package Control: install",
+				"Package Control: Install Package"
+			],
+			[
+				"bootsrap da",
+				"Snippet: Bootstrap danger button"
+			],
+			[
+				"ins",
+				"Package Control: Install Package"
+			],
+			[
+				"boo",
+				"Snippet: Bootstrap starter"
+			],
+			[
+				"Package Control: in",
+				"Package Control: Install Package"
+			],
+			[
+				"Package Control: INSTA",
+				"Package Control: Install Package"
+			],
+			[
+				"install",
+				"Package Control: Install Package"
+			],
+			[
+				"insta",
+				"Package Control: Install Package"
+			]
+		],
+		"width": 575.0
+	},
+	"console":
+	{
+		"height": 146.0
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"file_history":
+	[
+		"/Users/fmoreno/Documents/clases/Mostro/mostro.html",
+		"/Users/fmoreno/Documents/clases/Mostro/js/vendor/placeholder.js",
+		"/Users/fmoreno/Documents/Mostro Web/Index.html",
+		"/Users/fmoreno/Documents/clases/Mostro/css/estilos.css",
+		"/Users/fmoreno/Documents/clases/Mostro/css/estilos.styl",
+		"/Users/fmoreno/Documents/clases/bootsrap/css/bootstrap-theme.css",
+		"/test1.html",
+		"/Users/fmoreno/Documents/clases/bootsrap/fonts/glyphicons-halflings-regular.svg",
+		"/Users/fmoreno/Documents/clases/bootsrap/index.html",
+		"/Users/fmoreno/Documents/clases/bootsrap/css/bootstrap.min.css",
+		"/Users/fmoreno/Documents/clases/Pulse2014-America/estilos.css",
+		"/Users/fmoreno/Documents/clases/Pulse2014-America/index.html",
+		"/Users/fmoreno/Documents/clases/Pruebas/javascript test/chap3 test1.html",
+		"/Users/fmoreno/Documents/clases/Pruebas/javascript test/chap2 test1.html",
+		"/Users/fmoreno/Documents/clases/Pruebas/javascript test/chap1 test1.html",
+		"/Users/fmoreno/Documents/clases/Pruebas/javascript test/Chap1 test2.html",
+		"/Users/fmoreno/Documents/clases/Pruebas/javascript test/css/estilo1.css",
+		"/Users/fmoreno/Documents/clases/Pruebas/javascript.html",
+		"/Users/fmoreno/Downloads/icomoon (2)/style.css",
+		"/Applications/MAMP/htdocs/Comics/normalize.css",
+		"/Applications/MAMP/htdocs/Comics/prefixfree.js",
+		"/Users/fmoreno/Documents/clases/Pruebas/index.html",
+		"/Users/fmoreno/Documents/clases/Pruebas/estilos.css",
+		"/Users/fmoreno/Downloads/icomoon (1)/style.css",
+		"/Users/fmoreno/Documents/clases/Prueba EVA/index.html",
+		"/Users/fmoreno/Documents/clases/Prueba EVA/estilos.css",
+		"/Users/fmoreno/Documents/clases/Pruebas/comment.js",
+		"/Users/fmoreno/Documents/clases/Pulse2014-America/formulario.js",
+		"/private/var/folders/fd/4l89165d5xnf259wx1t7krxm0000gn/T/dd58353b-5c2b-4e65-9937-ee0498d367de/public_html/elmostro/wp-content/themes/stripshow_sandbox/library/styles/typography.css"
+	],
+	"find":
+	{
+		"height": 35.0
+	},
+	"find_in_files":
+	{
+		"height": 0.0,
+		"where_history":
+		[
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"mic",
+			"yao",
+			"panel",
+			"	\n",
+			"	.",
+			"	\n",
+			"display"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"selected": 2,
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"file": "css/estilos.styl",
+					"settings":
+					{
+						"buffer_size": 641,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								361,
+								361
+							]
+						],
+						"settings":
+						{
+							"BracketHighlighterBusy": false,
+							"auto_indent": true,
+							"bh_regions":
+							[
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_c_define",
+								"bh_c_define_center",
+								"bh_c_define_open",
+								"bh_c_define_close",
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close"
+							],
+							"syntax": "Packages/Stylus/Stylus.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 261.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "css/estilos.css",
+					"settings":
+					{
+						"buffer_size": 501,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								66,
+								66
+							]
+						],
+						"settings":
+						{
+							"BracketHighlighterBusy": false,
+							"bh_regions":
+							[
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_c_define",
+								"bh_c_define_center",
+								"bh_c_define_open",
+								"bh_c_define_close",
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close"
+							],
+							"syntax": "Packages/CSS/CSS.tmLanguage"
+						},
+						"translation.x": 144.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "mostro.html",
+					"settings":
+					{
+						"buffer_size": 4588,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								3727,
+								3730
+							]
+						],
+						"settings":
+						{
+							"BracketHighlighterBusy": false,
+							"bh_regions":
+							[
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_c_define",
+								"bh_c_define_center",
+								"bh_c_define_open",
+								"bh_c_define_close",
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close"
+							],
+							"syntax": "Packages/HTML/HTML.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 1813.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 0.0
+	},
+	"input":
+	{
+		"height": 34.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"replace":
+	{
+		"height": 0.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+			[
+				"",
+				"css/bootstrap-theme.css"
+			]
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 500.0,
+		"selected_items":
+		[
+		],
+		"width": 380.0
+	},
+	"show_minimap": false,
+	"show_open_files": true,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 210.0,
+	"status_bar_visible": true
+}
