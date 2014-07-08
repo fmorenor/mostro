@@ -7,10 +7,13 @@
 	<link rel="stylesheet" href="css/foundation.css">
 	<link rel="stylesheet" href="css/estilos.css">
 	<script src="js/vendor/modernizr.js"></script>
+	<script src="js/fecha.js"></script>
 </head>
-<body>
+<body onload="fecha()">
+
 	    <!-- Barra de Navegacion -->
-	  <nav class="top-bar" data-topbar>
+   
+	  <nav class="top-bar" data-topbar data-options="sticky_on: large">
 	    <ul class="title-area">
 	      <li class="name">
 
@@ -22,7 +25,10 @@
 	  <section class="top-bar-section">
 	    <!-- Right Nav Section -->
 	    <ul class="right">
-	      <li class="active"><a href="#" data-reveal-id="videoModal">Serie Animada</a>
+
+	    	<li class="active"> <a href="#"> <img src="img/mini_btn_fb.png"> facebook </a>
+	    	</li>
+	      <li class="active"><a href="#" data-reveal-id="videoModal"> <img src="img/mini_btn_videos.png"> videos </a>
 				<div id="videoModal" class="reveal-modal large" data-reveal>
 				  <h2>La Serie Animada de La Casa del Mostro</h2>
 				  <div class="flex-video" widescreen>
@@ -31,10 +37,7 @@
 				  <a class="close-reveal-modal">&#215;</a>
 				</div>
 	      </li>
-	      <li class="has-dropdown">
-	        <a href="#">Social</a>
-	        <ul class="dropdown">
-	          <li><a href="#" data-reveal-id="myModal">Contacto</a>
+	          <li class="active"><a href="#" data-reveal-id="myModal"> <img src="img/mini_btn_mail.png"> Contacto</a>
 					<div id="myModal" class="reveal-modal" data-reveal>
 					  <form>
 							  <div class="row">
@@ -62,7 +65,7 @@
 							        <select>
 							          <option value="Sitio Web">Sitio Web</option>
 							          <option value="Ayuda">Ayuda</option>
-							          <option value="Licenica">Licenica</option>
+							          <option value="Licencia">Licencia</option>
 							          <option value="Saludo">Saludo</option>
 							        </select>
 							      </label>
@@ -80,15 +83,19 @@
 					  <a class="close-reveal-modal">&#215;</a>
 					</div>
 	          </li>
-	        </ul>
-	      </li>
 	    </ul>
 	
-	    <!-- Left Nav Section -->
-	    <ul class="left horoscopo">
-	      <li><a href="#">Hoy en el calendario azteca:</a></li>
-	    </ul>
+	    <!-- Left Nav Section --> 
+	    <div class="aztecdate">
+	      <ul class="date">
+	      <li><a>Hoy en el calendario azteca:</a></li>
+	      <li><img  src="" id="horoscopo"/></li>
+	      <li><a id ="fecha"></a></li>
+	      </ul>
+	    </div>
 	  </section>
+
+	
 	</nav>
 	<div id="grecas"></div>
  <!-- Termina Barra de Navegacion -->
@@ -96,15 +103,19 @@
   <!-- Contenido -->
   <div class="row">
   <div class="hide-for-small hide-for-medium large-3 columns" > 
+<!--  QUETZ -->
   	<div class="card">
  		
  	 			<img class="face front" src="img/thumb_quetz.png"> 	
  	 			<img class="face espalda"src="img/thumb_quetz_back.png">
  	 
   	</div>
-
-  <img src="img/thumb_yao.png">
-
+<!--  YAO-->
+	<div class="card">
+	 	<img class="face front" src="img/thumb_yao.png">
+  		<img class="face espalda"src="img/thumb_yao_back.png">
+  	</div>
+<!-- MAIN PAGE -->
   </div>
 
   <div class="small-12 large-6 columns" data-equalizer-watch>
@@ -115,18 +126,65 @@
   	</ul>
   </div>
 
-  <div class="small-12 large-3 columns " data-equalizer-watch><a href="img/thumb_mostro.png"><img src="img/thumb_mostro.png">
-  <a href="img/thumb_mic.png"><img src="img/thumb_mic.png">
+  <div class="small-12 large-3 columns " data-equalizer-watch>
+<!-- MOSTRO -->
+<div class="card">
+    <img class="face front" src="img/thumb_mostro.png">
+  	<img class="face espalda"src="img/thumb_mostro_back.png">
+</div>
+<!-- MIC -->
+<div class="card">
+  	<img class="face front" src="img/thumb_mic.png">
+ 	<img class="face espalda"src="img/thumb_mic_back.png">
+ </div>
+  	
   </div>
 </div>
 <div class="row" data-equalizer>
-  <div class="small-12 large-3 columns" data-equalizer-watch><p><a href="img/thumb_quetz.png"><img src="img/thumb_oce.png"></p></div>
-  <div class="small-12 large-3 columns" data-equalizer-watch><p><a href="img/thumb_quetz.png"><img src="img/thumb_xipe.png"></p></div>
-  <div class="small-12 large-3 columns " data-equalizer-watch><p><a href="img/thumb_quetz.png"><img src="img/thumb_xochi.png"></p></div>
-  <div class="small-12 large-3 columns " data-equalizer-watch><p><a href="img/thumb_quetz.png"><img src="img/thumb_prox.png"></p></div>
+  <div class="small-12 large-3 columns" data-equalizer-watch>
+<!-- OCE -->
+	<div class="card">
+  		<img class="face front" src="img/thumb_oce.png">
+		<img class="face espalda"src="img/thumb_oce_back.png">
+ 	</div>
+ </div>
+  <div class="small-12 large-3 columns" data-equalizer-watch>
+<!-- XIPE -->
+	<div class="card">
+   	    <img class="face" src="img/thumb_xipe.png">
+		<img class="face espalda"src="img/thumb_xipe_back.png">
+ 	</div>
+
+  </div>
+  <div class="small-12 large-3 columns " data-equalizer-watch>
+<!-- XOCHI -->
+		<div class="card">
+  			<img class="face" src="img/thumb_xochi.png">
+  			<img class="face espalda"src="img/thumb_xochi_back.png">
+		</div>
+ </div>
+  <div class="small-12 large-3 columns " data-equalizer-watch><p><img src="img/thumb_prox.png"></p></div>
 </div>
+
 <footer>
-	<a> Copyright La casa del Mostro</a>
+	<div class="social">
+	<ul>
+		<li>
+			<img src="img/btn_fb_mostro.png">
+		</li>
+		<li>
+			<img src="img/btn_mail_mostro.png">
+		</li>
+		<li>
+			<img src="img/btn_twitter_mostro.png">
+		</li>
+		<li>
+			<img src="img/btn_youtube_mostro.png">
+		</li>
+	</ul>
+	<a href=""> Todos los derechos reservados a La casa del Mostro</a>
+	</div>
+	
 </footer>
 <script src="js/vendor/jquery.js"></script>
     <script src="js/foundation.min.js"></script>

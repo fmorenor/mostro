@@ -1,6 +1,6 @@
 @import	'nib/vendor'
 @import 'nib/gradients'
-vendor-prefixes = o ms moz webkit papitas official
+vendor-prefixes = o ms moz webkit 
 
 body
 	 background: white
@@ -10,10 +10,9 @@ footer
 	background #000
 	background-image:url('../img/botton_barra_negra.png')
 	text-align: center
-	padding-top:20px
-
-img
-	width 100% 	
+	font-size 12px
+// img
+// 	width 100% 	
 
 .columns
 	padding-left 0px
@@ -28,9 +27,49 @@ img
 
 .top-bar
 	background #41A4E5 
-	background-image url('../img/top_back_azul.png')  
+	// background-image url('../img/top_back_azul.png')  
 	height: 88px 
-	border-bottom: 10px
+	border-bottom: 10px	
+
+.card
+	position relative
+	-webkit-transform-style preserve-3d
+	-webkit-transition: 1s
+	transform-style preserve-3d
+	transition 1s
+	
+.face
+	width 100% 
+	 -webkit-backface-visibility hidden
+	backface-visibility hidden
+	
+.card:hover
+	-webkit-transform rotateY(180deg)
+	transform rotateY(180deg)
+	
+.date ul
+	display list-item
+	 	
+.front
+	width 100% 
+
+.espalda
+	position absolute
+	top 0px
+	width 100%
+	-webkit-transform rotateY(180deg)	
+	transform rotateY(180deg)
+	
+.social ul
+	padding-top 5px
+	margin-bottom 5px
+	
+.social ul li
+	display inline 
+	
+#horoscopo
+	width 50px 
+
 #d1
 	width: 100%
 
@@ -41,24 +80,4 @@ img
 	background-image url('../img/top_frame_grecas.png')  
 	height 15px 
 	
-
-.card
-	position relative
-	-webkit-transform-style preserve-3d
-	-webkit-transition: 1s
-	
-.face
-	width 100% 
-	 -webkit-backface-visibility hidden
-	
-.card:hover
-	-webkit-transform rotateY(180deg)
-	
-.front
-	width 100% 
-
-.espalda
-	position absolute
-	top 0px
-	width 100%
-	-webkit-transform rotateY(180deg)		
+			
