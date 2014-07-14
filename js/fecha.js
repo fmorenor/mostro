@@ -63,6 +63,9 @@ function fecha () {
   for (var x = 0; x < muerte.length; x++){
     if (muerte[x]==comp1) { var signo="muerte";}
  }
+  for (var x = 0; x < movimiento.length; x++){
+     if (movimiento[x]==comp1) { var signo="movimiento";}
+ }
  for (var x = 0; x < venado.length; x++){
     if (venado[x]==comp1) { var signo="venado";}
  }
@@ -93,6 +96,8 @@ for (var x = 0; x < perro.length; x++){
  for (var x = 0; x < flor.length; x++){
     if (flor[x]==comp1) { var signo="flor";}
  }
+
+
 
   document.getElementById('horoscopo').src = "img/signos/"+signo+".png";
   document.getElementById('fecha').innerHTML=" " +signo;
