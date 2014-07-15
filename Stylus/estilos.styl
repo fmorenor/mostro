@@ -1,10 +1,12 @@
 @import	'nib/vendor'
 @import 'nib/gradients'
+@import "normalize.styl"
+@import 'foundation'
+
 vendor-prefixes = o ms moz webkit 
 
 body
 	 background: white
-		
 		
 footer
 	background #000
@@ -23,7 +25,8 @@ footer
 .comic
 	background #f68b1f
 	text-align right   
-	    
+  
+	
 .row	
 	max-width 100%
 
@@ -34,16 +37,16 @@ footer
 	border-bottom: 10px	
 
 .card
-	position relative
 	-webkit-transform-style preserve-3d
 	-webkit-transition: 1s
+	position relative
 	transform-style preserve-3d
 	transition 1s
 	
 .face
-	width 100% 
 	 -webkit-backface-visibility hidden
 	backface-visibility hidden
+	width 100% 
 	
 .card:hover
 	-webkit-transform rotateY(180deg)
@@ -56,11 +59,11 @@ footer
 	width 100% 
 
 .espalda
+	-webkit-transform rotateY(180deg)	
 	position absolute
 	top 0px
-	width 100%
-	-webkit-transform rotateY(180deg)	
 	transform rotateY(180deg)
+	width 100%
 	
 .social ul
 	padding-top 5px

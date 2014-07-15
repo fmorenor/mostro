@@ -1545,7 +1545,7 @@ meta.foundation-mq-topbar {
       background: #333333; }
 
   .contain-to-grid .top-bar {
-    max-width: 62.5rem;
+  /*  max-width: 62.5rem;*/
     margin: 0 auto;
     margin-bottom: 0; }
 
