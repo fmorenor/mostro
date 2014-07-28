@@ -7,12 +7,13 @@
 	<title>La Casa del Mostro</title>
 	<link rel="stylesheet" href="css/foundation.css">
 	<link rel="stylesheet" href="css/estilos.css">
+	<link href='http://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
 	<script src="js/vendor/modernizr.js"></script>
 	<script src="js/fecha.js"></script>
 </head>
 <body onload="fecha()">
 
-	    <!-- Barra de Navegacion -->
+  <!-- Barra de Navegacion -->
    <div class="contain-to-grid sticky">
 	  <nav class="top-bar" data-topbar data-options="sticky_on: large">
 	    <ul class="title-area">
@@ -33,37 +34,37 @@
 				<div id="videoModal" class="reveal-modal large" data-reveal>
 				  <h2>La Serie Animada de La Casa del Mostro</h2>
 				  <div class="flex-video" widescreen>
-				    <iframe width="400" height="225" src="http://www.youtube.com/embed/nSLpIAxG6Pw?rel=0"  frameborder="0" allowfullscreen> </iframe>
+				    <iframe width="400" height="225" src="https://www.youtube.com/embed/nSLpIAxG6Pw?rel=0"  frameborder="0" allowfullscreen> </iframe>
 				  </div>
 				  <a class="close-reveal-modal">&#215;</a>
 				</div>
 	      </li>
 	          <li class="active"><a href="#" data-reveal-id="myModal"> <img src="img/mini_btn_mail.png"> Contacto</a>
 					<div id="myModal" class="reveal-modal" data-reveal>
-					  <form action="MAILTO:mostro@mostro.com.mx"  method="post">
+					  <form name="form1" id="ff" action="control/mailto.php"  method="POST">
 							  <div class="row">
 							    <div class="large-12 columns">
-							      <label>Correo
-							        <input type="text" placeholder="Escribe tu correo" />
+							      <label>Correo electornico
+							        <input name="email" type="text" placeholder="Escribe tu correo" />
 							      </label>
 							    </div>
 							  </div>
 							  <div class="row">
 							    <div class="large-6 columns">
 							      <label>Nombre
-							        <input type="text" placeholder="Nombre" />
+							        <input name="name" type="text" placeholder="Nombre" />
 							      </label>
 							    </div>
 							    <div class="large-6 columns">
 							      <label>Apellido 
-							        <input type="text" placeholder="Apellido " />
+							        <input name="apellido" type="text" placeholder="Apellido " />
 							      </label>
 							    </div>							
 							  </div>
 							  <div class="row">
 							    <div class="large-12 columns">
-							      <label>Tema
-							        <select>
+							      <label >Tema
+							        <select name="tema">
 							          <option value="Sitio Web">Sitio Web</option>
 							          <option value="Ayuda">Ayuda</option>
 							          <option value="Licencia">Licencia</option>
@@ -75,11 +76,17 @@
 							  <div class="row">
 							    <div class="large-12 columns">
 							      <label>Mensaje
-							        <textarea placeholder="Envianos tu mensaje"></textarea>
+							        <textarea name="cont" placeholder="Envianos tu mensaje"></textarea>
 							      </label>
 							    </div>
-							    <a href="" class="round button">Enviar</a>
+							    <p><input  class="round button" name="submit" type="submit" value="ENVIAR" /></p>
+							   <!--  <data-reveal-id="secondModal" a input type="submit" name="submit" class="round button">Enviar</a> -->
 							  </div>
+							  <div id="secondModal" class="reveal-modal" data-reveal>
+								  <h2>GRACIAS.</h2>
+								  <p>Nos comunicaremos contigo lo mas pronto posible.</p>
+								  <a class="close-reveal-modal">&#215;</a>
+								</div>
 							</form>
 					  <a class="close-reveal-modal">&#215;</a>
 					</div>
@@ -107,37 +114,64 @@
   <div class="hide-for-small hide-for-medium large-3 columns" > 
 <!--  QUETZ -->
   	<div class="card">
- 		
- 	 			<img class="face front" src="img/thumb_quetz.png"> 	
- 	 			<img class="face espalda"src="img/thumb_quetz_back.png">
+ 				<div class="container">
+ 	 				<img class="face front" src="img/thumb_quetz.png"> 	
+ 	 			
+ 	 				<div class="face espalda">
+ 	 				<h3 id="nombre">QUETZ</h3>
+ 	 				<h4>Dios aereo</h4>
+ 	 				<h4>Dios del viento y el día</h4>
+ 	 				<h5>Tezcatlipoca blanco</h5>
+ 	 				<h5>Dios Mayor</h5>
+ 	 				</div>	
+ 				</div>
  	 
   	</div>
 <!--  YAO-->
 	<div class="card">
 	 	<img class="face front" src="img/thumb_yao.png">
-  		<img class="face espalda"src="img/thumb_yao_back.png">
+  		<div class="face espalda">
+ 	 				<h3 id="nombre">YAO</h3>
+ 	 				<h4>Heroe Guerrero</h4>
+ 	 				<h4>Soldado Aguila</h4>
+ 	 				<h5>Soldado Elite</h5>
+ 	 				</div>	
   	</div>
 <!-- MAIN PAGE -->
   </div>
 
-  <div class="small-12 large-6 columns" data-equalizer-watch>
+  <div class="small-12 large-6 columns" >
   	    <img id="d1" src="img/thumb_main_home.png" alt="Conoce a los dioses" /> 
 
-  	<ul class="clearing-thumbs comic" data-clearing>
-  	  <li><a href="http://comicstrip.elmostro.com/wp-content/stripshow_comics/1024_mostro.png"><img src="http://comicstrip.elmostro.com/wp-content/stripshow_comics/1024_mostro.png"></a></li>
-  	</ul>
+  	<div>
+  	 <a href="http://comicstrip.elmostro.com"><img src="http://comicstrip.elmostro.com/wp-content/stripshow_comics/1025_mostro.png"></a>
+  		
+  	</div>
+
   </div>
 
-  <div class="small-12 large-3 columns " data-equalizer-watch>
+  <div class="small-12 large-3 columns ">
 <!-- MOSTRO -->
 <div class="card">
     <img class="face front" src="img/thumb_mostro.png">
-  	<img class="face espalda"src="img/thumb_mostro_back.png">
+  	<div class="face espalda">
+ 	 				<h3 id="nombre">Mostro</h3>
+ 	 				<h4>Dios Acuatico</h4>
+ 	 				<h4>XOLTOL</h4>
+ 	 				<h5>Dios del Rayo</h5>
+ 	 				<h5>Dios de la mala suerte</h5>
+ 	 				</div>	
 </div>
 <!-- MIC -->
 <div class="card">
   	<img class="face front" src="img/thumb_mic.png">
- 	<img class="face espalda"src="img/thumb_mic_back.png">
+ 	<div class="face espalda">
+ 	 				<h3 id="nombre">MIC</h3>
+ 	 				<h4>Dios del Inframundo</h4>
+ 	 				<h4>Dios de los muertos</h4>
+ 	 				<h5>Regidor de Mictlan</h5>
+ 	 				<h5>Deidad</h5>
+ 	 				</div>	
  </div>
   	
   </div>
@@ -147,14 +181,25 @@
 <!-- OCE -->
 	<div class="card">
   		<img class="face front" src="img/thumb_oce.png">
-		<img class="face espalda"src="img/thumb_oce_back.png">
+		<div class="face espalda">
+ 	 				<h3 id="nombre">OCE</h3>
+ 	 				<h4>Heroe Guerrero</h4>
+ 	 				<h4>Guerrero Jaguar</h4>
+ 	 				<h5>Soldado Elite</h5>
+ 	 				</div>	
  	</div>
  </div>
   <div class="small-12 large-3 columns" data-equalizer-watch>
 <!-- XIPE -->
 	<div class="card">
    	    <img class="face" src="img/thumb_xipe.png">
-		<img class="face espalda"src="img/thumb_xipe_back.png">
+		<div class="face espalda">
+ 	 				<h3 id="nombre">XIPE</h3>
+ 	 				<h4>Dios terrestre</h4>
+ 	 				<h4>Dios de la fuerza y la naturaleza</h4>
+ 	 				<h5>Tezcatlipoca rojo</h5>
+ 	 				<h5>Dios Mayor</h5>
+ 	 				</div>	
  	</div>
 
   </div>
@@ -162,11 +207,37 @@
 <!-- XOCHI -->
 		<div class="card">
   			<img class="face" src="img/thumb_xochi.png">
-  			<img class="face espalda"src="img/thumb_xochi_back.png">
+  			<div class="face espalda">
+ 	 				<h3 id="nombre">XOCHI</h3>
+ 	 				<h4>Diosa terrestre</h4>
+ 	 				<h4>Diosa de la belleza y la fertilidad</h4> 				
+ 	 				<h5>Patrona de las jovenes</h5>
+ 	 				</div>	
 		</div>
  </div>
-  <div class="small-12 large-3 columns " data-equalizer-watch><p><img src="img/thumb_prox.png"></p></div>
+ <!-- coyo-->
+  <div class="small-12 large-3 columns " data-equalizer-watch>
+
+		<div class="card">
+  			<img class="face" src="img/thumb_coyo.png">
+  			<div class="face espalda">
+ 	 				<h3 id="nombre">COYO</h3>
+ 	 				<h4>Diosa celeste</h4>
+ 	 				<h4>Diosa de la luna</h4>
+ 	 				<h5>Deidad hermana de Huitzi</h5>
+ 	 				</div>	
+		</div>
+ </div>
+ <!-- NEXT-->
+ <div class="row">
+  <div class="small-12 medium 4 large-3 columns "><p><img src="img/thumb_prox.png" width="100%"></p></div>
+   <div class="small-12 medium 4 large-3 columns "><p><img src="img/thumb_prox.png" width="100%"></p></div>
+    <div class="small-12 medium 4 large-3 columns "><p><img src="img/thumb_prox.png" width="100%"></p></div>
+     <div class="small-12 medium 4 large-3 columns "><p><img src="img/thumb_prox.png" width="100%"></p></div>
 </div>
+ 	
+ 
+ </div>
 
 <footer>
 	<div class="social">
@@ -206,7 +277,6 @@
     ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
     var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
   })();
-
 </script>    
 </body>
 </html>
